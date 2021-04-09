@@ -9,12 +9,13 @@ fonts
   src: url('../fonts/big-shoulders-display-v4-latin-700.woff');
 }
 
-/* lexend-deca-regular - latin */
 @font-face {
   font-family: 'Lexend Deca';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lexend-deca-v7-latin-regular.woff');
+  src: url('../fonts/lexend-deca-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff');
 }
 
 /*==========
@@ -40,15 +41,23 @@ html {
   --very-light-gray: hsl(0, 0%, 95%);
 }
 
-.body {
+body {
   margin: 0;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
+
 }
 img {
   max-width: 100%;
 }
+/*=============
+Typography
+=============== */
+h1 {
+  margin: 0;
+  font-family: 'Big Shoulders Display', sans-serif;
 
+}
 /*=============
 Media Queries
 =============== */
