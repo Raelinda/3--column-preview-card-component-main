@@ -90,6 +90,7 @@ h1 {
 .card__link--section-two {
   color: var(--dark-cyan);
 }
+
 .card__link--section-two:hover,
 .card__link--section-two:focus {
   background: var(--dark-cyan);
@@ -101,6 +102,7 @@ h1 {
 .card__link--section-three {
   color: var(--very-dark-cyan);
 }
+
 .card__link--section-three:hover,
 .card__link--section-three:focus {
   background: var(--very-dark-cyan);
@@ -144,10 +146,43 @@ section {
 /*=============
 Media Queries
 =============== */
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 775px) {
 
-@media screen and (min-width: 1440px) {}
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
 
+  section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+  }
+  .section-one, .section-three {
+    border-radius: 0;
+  }
+
+.card__text {
+  margin-bottom: 8em;
+}
+  .card__btn {
+    position: absolute;
+    bottom: 10vh;
+
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  body {
+        font-size: 22.5px;
+  }
+img {
+  transform: scale(1.5);
+}
+h1 {
+  font-size: 4.5rem;
+}
+}
 /*=============
 Attributions
 =============== */
